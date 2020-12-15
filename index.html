@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subir un proyecto a GitHub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           html {font-family: sans-serif; text-align: center}
+           body {display: inline-block; text-align: left}
+           label{font-weight: bold}
+           footer{font-size: small}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Subir un proyecto a GitHub</h1>
+        </header>
+        <form id="forma" action="javascript:;">
+            
+            <p>
+                <label accesskey="N">
+                    Boleta<br>
+                    <input name="boleta" type="text" autofocus
+                           required pattern=".{1,30}"
+                           maxlength="9" size="10"
+                           placeholder="10 caracteres">
+                </label>
+                <br><output id="salidaBoleta"></output>
+            </p>
+            <p>
+                <label accesskey="S">
+                    Nombre<br>
+                    <input name="nombre" type="password"
+                           required pattern=".{5,30}"
+                           maxlength="30" size="33"
+                           placeholder="5 a 30 caracteres">
+                </label>
+                <br><output id="salidaNombre"></output>
+            </p>
+            <p>
+
+                <label accesskey="U">
+                    Grupo<br>
+                    <input name="usuario" type="text"
+                           pattern="[A-Za-z0-9]{5}"
+                           required
+                           maxlength="5"
+                           size="19"
+                           placeholder="5 letras o dígitos">
+                </label>
+                <br><output id="salidaUsuario"></output>
+            </p>
+            <p>
+                <label accesskey="F">
+                    Fecha<br>
+                    <input name="fecha" type="date"
+                           max="2021-01-01" min="2020-01-01" required>
+                </label>
+            </p>
+          <p>
+                <label accesskey="N">
+                    Materia<br>
+                    <input name="materia" type="text" pattern=".{1,30}"
+                           maxlength="30" required
+                           placeholder="1 a 30 caracteres">
+                </label>
+            </p>
+
+            <p><input type="submit" value="Procesar" accesskey="P"></p>
+        </form>
+        <footer>
+            Copyright @Elizalde Gutierrez Mariana Isabel
+        </footer>
+        
+        <script src="js/CtrlTexto.js"></script>
+    </body>
+</html>
